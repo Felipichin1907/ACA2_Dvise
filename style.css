@@ -1,0 +1,93 @@
+/* Estilos para el cuerpo del sitio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10;
+    padding: 10;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0ebfdb;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header-content {
+    display: inline-block; /* Permite que el contenido del header flote junto a la imagen */
+    vertical-align: middle; /* Alinea verticalmente el contenido en el centro */
+}
+
+header img {
+    top: 20px; /* Ajusta la posición verticalmente */
+    right: 20px; /* Ajusta la posición horizontalmente */
+    position: absolute;
+    width: 160px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: 150px;
+    z-index: 1; /* Asegura que la imagen esté en la capa superior */
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #443737;
+    font-weight: bold;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 10px;
+}
+
+
+
+/* Estilos para los títulos */
+h1 {
+    font-size: 20px; /* Tamaño de fuente más grande para el encabezado principal */
+    font-family: Arial Black, sans-serif;
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 20px; /* Espaciado inferior para separar el título del contenido */
+}
+
+
+h2 {
+    font-size: 24px; /* Tamaño de fuente para subtítulos */
+    color: #333; /* Color de texto más oscuro para los subtítulos */
+}
+
+/* Estilos para el texto del cuerpo */
+p {
+    font-size: 16px; /* Tamaño de fuente para el texto del cuerpo */
+    line-height: 1.5; /* Espaciado entre líneas para una mejor legibilidad */
+    color: #555; /* Color de texto ligeramente más oscuro que el fondo */
+}
+
+/* Estilos para los enlaces dentro del texto */
+a {
+    color: #167de3;
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
