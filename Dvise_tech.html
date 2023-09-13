@@ -1,50 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVISETECH</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-        <h1>DviseTech </h1>
-        <h1>Desarrollo Software & Consultoria </h1> 
-        
-    </div>
-    <img src="Logo_Dvise.jpg" width="300" height="300" >
-    </header>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DVISETECH</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script>
+            function mostrarSeccion(seccionId) {
+                // Ocultar todas las secciones
+                var secciones = document.querySelectorAll('.seccion');
+                for (var i = 0; i < secciones.length; i++) {
+                    secciones[i].classList.remove('mostrando');
+                }
+                // Mostrar la seccion seleccionada
+                var seccion = document.getElementById(seccionId);
+                seccion.classList.add('mostrando');
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">  
+            <h1>DviseTech</h1>
+            <h1>Desarrollo Software & Consultoria </h1> 
+        </div>
+        <img src="Logo_Dvise.jpg" alt="Gota de agua"  width="300" height="00" >
+        </header>
             <nav>
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Nuestra Empresa">Nuestra Empresa</a></li>
-                <li><a href="#Productos">Productos</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="#" onclick="mostrarSeccion('Inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('Nuestra Empresa')">Nuestra Empresa</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('Productos')">Productos</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('Contactenos')">Contactenos</a></li>
+                </ul>
+            </nav>
+    <main>   
+        <!-- Seccion de Inicio -->     
+        <section id="Inicio" class="Seccion mostrando">
+            <h2>Quienes Somos</h2>
+            <p>En Dvise Tech nos especializamos en desarrollo de software y soluciones cloud computing. Nuestro objetivo es ayudar a las empresas a alcanzar su máximo potencial mediante herramientas de última generación y soluciones personalizadas.Nuestro equipo cuenta con experiencia en todas las fases del ciclo de vida del software, brindando soluciones a medida para empresas de todos los tamaños y sectores</p>
+            <img src="Quienes_Somos.jpg" width="300" height="300">
+        </section>
+        <!-- Seccion de Muesta Empresa -->
+        <section id="Nuestra Empresa" class="seccion">
+            <h2>Mision</h2>
+            <p>Ofrecer soluciones de software personalizadas y de alta calidad respaldadas por infraestructuras en la nube, satisfaciendo 
+            las necesidades tecnológicas de nuestros clientes para competir en el mercado global. Establecer relaciones de confianza y colaboración a largo plazo con nuestros clientes, brindando soluciones escalables e innovadoras que aumenten su eficiencia y productividad</p>
+            <h2>Vision</h2>
+            <p>Ser líderes en la industria por nuestra excelencia en soluciones tecnológicas personalizadas, eficientes y escalables. Nos 
+            enfocamos en la calidad y satisfacción del cliente para establecer relaciones de colaboración a largo plazo. Nos comprometemos
+            a estar a la vanguardia de la tecnología y desarrollar un equipo altamente capacitado para contribuir al crecimiento y 
+            éxito de nuestros clientes.</p>
+        </section>
+        <!-- Seccion Nuestros Servicios -->
+        <section id="Nuestros Servicios" class="seccion">
+            <h2>Nuestro Portafolio</h2>
+            <p>Nuestro portafolio de servicios combina la experiencia en desarrollo de software personalizado con la experiencia en cloud computing para proporcionar soluciones de tecnología de la información completas y eficaces para cualquier tipo de empresa.  Nos aseguramos que nuestro portafolio de desarrollo de software tenga una variedad de productos y servicios, desde aplicaciones móviles hasta software empresarial. Cada uno de nuestros productos/servicios está clasificado en categorías para facilitar la navegación del cliente </p>
+        </section>
+        <!-- Seccion Contactenos -->
+        <section id="Contactenos" class="seccion">
+            <h2>Contactenos</h2>
+            <p>Si desea ponerse en contacto con nosotros, diligencie el siguiente formualrio:</p>
+            <p>Los campos marcados con(*) son obligatorios</p>
+            
+        <form id="contactForm" action="procesar_formulario.php" method="post">
+        <ul>
+            <li>
+                <label for="nombre">Nombre*:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </li>
+            <li>
+                <label for="apellido">Apellido*:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </li>
+            <li>
+                <label for="email">Email*:</label> 
+                <input type="text" id="email" name="email" required>
+                
+            </li>
+            <li>
+                <label for="empresa">Empresa:</label> 
+                <input type="text" id="empresa" name="empresa" required>
+            </li>
+            <li>
+                <label for="telefono">Telefono*:</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </li>
+            <li>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="2" required></textarea>
+            </li>   
+            
+                <Input type="submit" value="Enviar"> 
+            </li>
+        </ul>
+    </form>       
+        </section>
+    </main>
+        <footer>
+            <p>&copy; 2023 Desarrollado por "DviseTech"</p>
+        </footer>
+    </body>
+ </html>
 
-      </body>
-
-    <section id="Inicio">
-        <h2>Quienes Somos</h2>
-        
-        <p>En Dvise Tech nos especializamos en desarrollo de software y soluciones cloud computing. Nuestro objetivo es ayudar a las empresas a alcanzar su máximo potencial mediante herramientas de última generación y soluciones personalizadas.Nuestro equipo cuenta con experiencia en todas las fases del ciclo de vida del software, brindando soluciones a medida para empresas de todos los tamaños y sectores</p>
-        <img src="Quienes_Somos.jpg" width="300" height="300">
-    </section>
-
-    <section id="Nuestra Empresa">
-        <h2>Vision</h2>
-        <p>Somos una empresa apasionada por la tecnología y estamos comprometidos en brindar soluciones innovadoras a nuestros clientes.</p>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Estamos ubicados en [tu dirección]. Puedes contactarnos en [tu dirección de correo electrónico] o llamarnos al [tu número de teléfono].</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Tu Empresa de Tecnología "DviseTech"</p>
-    </footer>
-</body>
-</html>

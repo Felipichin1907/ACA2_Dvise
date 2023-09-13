@@ -14,6 +14,14 @@ header {
     text-align: center;
 }
 
+/* Estilos para ocualtar y mostrar secciones*/
+.seccion {
+    display: none;
+}
+.mostrando {
+    display: block;
+}
+
 header-content {
     display: inline-block; /* Permite que el contenido del header flote junto a la imagen */
     vertical-align: middle; /* Alinea verticalmente el contenido en el centro */
